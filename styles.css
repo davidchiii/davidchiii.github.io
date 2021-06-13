@@ -12,9 +12,18 @@ div{
   color:purple;
 }
 .caption{
-  color:black;
   font-size:20px;
 }
 .jumbotron{
   text-align: center;
+}
+#list1{
+  font-size: 40px;
+}
+p{
+  font-size: 30px;
+  color:black;
+}
+#gallery_banner{
+  font-size: 40px;
 }
