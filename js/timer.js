@@ -4,6 +4,7 @@ var hour = date.getUTCHours();
 var directory = "../assets/images/background/";
 
 hour = 2;
+alert("ah its working");
 
 function checkTime(){
     if(hour => 6 && hour < 11){
@@ -19,4 +20,5 @@ function checkTime(){
         document.getElementsByClassName("masthead")[0].setAttribute("style","linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(" + dir + "night.jpg");
     }
 }
+console.log("cringe");
 checkTime();
