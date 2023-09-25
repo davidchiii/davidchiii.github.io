@@ -1,0 +1,48 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(93, 196, 163);
+}
+
+
+.navbar{
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline;
+}
+
+.navbar a{
+    color:blue;
+    /* text-align: center; */
+    padding: 22px 24px;
+    text-decoration: none;
+    font-size: 100%;
+    padding: 30px;
+}
+
+.navbar a:hover{
+    background-color: rgb(232, 251, 185);
+}
+
+.row {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column {
+    padding:1rem;
+}
+
+.columnimg {
+    max-width:100%;
+    height: auto;
+}
