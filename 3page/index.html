@@ -11,55 +11,72 @@
 <body>
     <div class="title">
         <h1>
-            title here
+            <span style="color: coral;">coral</span> coasts ⛵
         </h1>
     </div>
     <ul class="navbar">
-        <li><a class="navitem" href="index.html">Home</a></li>
-        <li><a class="navitem" href="about.html">About</a></li>
-        <li><a class="navitem" href="gallery.html">Gallery</a></li>
+        <li><a class="navitem" href="index.html">home</a></li>
+        <li><a class="navitem" href="about.html">about</a></li>
+        <li><a class="navitem" href="gallery.html">gallery</a></li>
     </ul>
 
-    <div class="row">
+    <br>
+
+
+    <div class="banner">
+        <h1>Save our coral reefs!</h1>
+        <p>Support local and international efforts!</p>
+    </div>
+
+    <div style="text-align: center; color: rgb(23, 121, 88);">
+        <h2>
+            What is causing the decline of biodiversity in our oceans?
+        </h2>
+    </div>
+
+    <div class="row2">
         <div class="column">
             <h1>
-                column A
+                climate change
             </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nulla mi. Pellentesque vestibulum vitae ligula
-                in ultricies. Vivamus accumsan velit sem, eget iaculis sem condimentum a. Sed fringilla erat elit, eget dictum erat
-                pharetra ac. Curabitur tincidunt quam et elit placerat, nec commodo ipsum fringilla. Ut dignissim risus ac interdum
-                euismod. In venenatis laoreet felis, et vestibulum nisl luctus eu.
+                Rising sea temperatures due to climate change result in coral bleaching, where corals expel the
+                symbiotic algae
+                (zooxanthellae) that provide them with energy and color. Repeated or prolonged bleaching events can lead
+                to coral death.
             </p>
-            <img src="pexels-miguel-á-padriñán-255379.jpg" class="columnimg">
+            <img src="mainpage1.jpg" class="column_img">
         </div>
         <div class="column">
             <h1>
-                column B
+                acidification
             </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nulla mi. Pellentesque vestibulum vitae ligula
-                in ultricies. Vivamus accumsan velit sem, eget iaculis sem condimentum a. Sed fringilla erat elit, eget dictum erat
-                pharetra ac. Curabitur tincidunt quam et elit placerat, nec commodo ipsum fringilla. Ut dignissim risus ac interdum
-                euismod. In venenatis laoreet felis, et vestibulum nisl luctus eu.
+                Increased carbon dioxide (CO2) levels in the atmosphere are absorbed by the oceans, causing the water to
+                become more
+                acidic. This makes it harder for corals to build their calcium carbonate skeletons and weakens their
+                overall health.
+                <br>
+                <br>
+                Runoff from agriculture, urban areas, and industrial activities can introduce pollutants such as
+                nutrients and chemicals
+                into coastal waters, leading to water quality degradation and the proliferation of harmful algae that
+                can smother
+                corals.
             </p>
-            <img src="pexels-miguel-á-padriñán-255379.jpg" class="columnimg">
-        </div>
-        <div class="column">
-            <h1>
-                column C
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nulla mi. Pellentesque vestibulum vitae ligula
-                in ultricies. Vivamus accumsan velit sem, eget iaculis sem condimentum a. Sed fringilla erat elit, eget dictum erat
-                pharetra ac. Curabitur tincidunt quam et elit placerat, nec commodo ipsum fringilla. Ut dignissim risus ac interdum
-                euismod. In venenatis laoreet felis, et vestibulum nisl luctus eu.
-            </p>
-            <img src="pexels-miguel-á-padriñán-255379.jpg" class="columnimg">
+            <img src="mainpage2.jpg" class="column_img">
         </div>
     </div>
 
 
 </body>
+
+<footer style="text-align: center;">
+    &copy; <span id="currentYear"></span> Coral Coast
+</footer>
+<script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+</script>
 
 </html>

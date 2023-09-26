@@ -1,6 +1,6 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: antiquewhite;
+    background-color: rgb(190, 204, 235);
 }
 
 h1 {
@@ -38,11 +38,53 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.row2 {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
 .column {
     padding:1rem;
 }
 
-.columnimg {
+.column_img {
     max-width:100%;
     height: auto;
+}
+
+
+.container {
+    display: flex;
+}
+
+.column_1 {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.column_2 {
+    flex: 2;
+    background-color: #e0e0e0;
+    padding: 20px;
+
+}
+
+.banner {
+    background-color: #3498db; /* Background color for the banner */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align text horizontally */
+    padding: 20px; /* Add padding to the container */
+}
+
+.banner h1 {
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 10px; /* Add some space below the heading */
+    background-color: inherit;
+}
+
+.banner p {
+    font-size: 18px; /* Font size for the paragraph text */
+    background-color: inherit;
 }
