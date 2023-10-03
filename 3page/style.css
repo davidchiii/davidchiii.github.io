@@ -81,6 +81,25 @@
 }
 
 
+/* gallery */
+
+.gallery_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 2vmin;
+}
+
+.gallery_flex img {
+    box-sizing: border-box;
+    padding: 2vmin;
+    max-width: 100%;
+    border-radius: 2vmin;
+}
+
+
+
 
 
 /* unused grid layout */
