@@ -1,12 +1,12 @@
 # Site settings
-title: David - Blog # site title
+title: David Chang # site title
 description: >- # site description
   Blog of David Chang.
 lang: en-US # default lang
 timezone: America/New_York # set your timezone
 image: assets/img/lab.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/davidchiii/davidchiii.github.io # site repo [optional]
-mode: light # default theme "dark" | "light"
+mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:

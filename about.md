@@ -2,7 +2,7 @@
 title: about
 permalink: /about/
 layout: page
-excerpt: Hi everyone. I'm a senior undergraduate student at New York University
+excerpt: Hi everyone. I'm a senior undergraduate student at New York University. This is the about me page.
 comments: false
 ---
 

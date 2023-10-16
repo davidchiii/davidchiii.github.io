@@ -17,7 +17,8 @@
       </span>
     </label>
     <a id="mode">
-      <svg
+      <!-- icon -->
+      <svg 
         class="mode-sunny"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -88,6 +89,7 @@
           style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
         />
       </svg>
+      <!-- icon -->
       <svg
         class="mode-moon"
         xmlns="http://www.w3.org/2000/svg"
@@ -186,14 +188,7 @@
           <a class="menu-link {% if url == '/' %}active{% endif %}" href="/">home</a>
           <a class="menu-link {% if url == '/about/' %}active{% endif %}" href="/about">about</a>
         {%- endif -%}
-        <a class="fa-solid fa-terminal" href="/feed.xml">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="17"
-            height="17"
-            viewBox="0 0 512 512"
-            fill="#ED812E"
-          >
+        <a class="fa-solid fa-code" style="color: #ff5277">
             <title>RSS</title>
             <path
               d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z"
@@ -204,7 +199,6 @@
             <path
               d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z"
             />
-          </svg>
         </a>
       </div>
     </div>
