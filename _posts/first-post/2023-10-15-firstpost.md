@@ -6,6 +6,7 @@ description: first blog post!
 tag:
   - meta
 image:
+comments: true
 ---
 
 This is my first post!
@@ -40,5 +41,6 @@ tag:
 image:
 categories: jekyll update
 usemathjax: true
+comments: true
 ---
 ```
