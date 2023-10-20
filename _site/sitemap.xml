@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/maths-example/</loc>
-<lastmod>2021-06-16T18:57:49-04:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/firstpost/</loc>
 <lastmod>2023-10-14T18:38:00-04:00</lastmod>
 </url>
@@ -27,5 +23,13 @@
 <url>
 <loc>http://localhost:4000/assets/David_Chang_Resume_Sept.pdf</loc>
 <lastmod>2023-09-27T11:48:09-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/midterm/dark.html</loc>
+<lastmod>2023-10-19T14:13:06-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/midterm/light.html</loc>
+<lastmod>2023-10-19T14:14:18-04:00</lastmod>
 </url>
 </urlset>
