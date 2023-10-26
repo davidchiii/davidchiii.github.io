@@ -22,6 +22,10 @@
     font-style: italic;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* smoky background o_o */
 body{
     background-color: #0f0f0f; 
@@ -34,7 +38,7 @@ body{
 .header{
     font-family: roobert;
     width: 100%;
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 5px solid aliceblue;
     text-align: right;
     position: relative;
 }
@@ -50,8 +54,13 @@ body{
 }
 
 a {
+    color: antiquewhite;
     text-decoration: none;
     text-decoration-color: antiquewhite;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 h1{
@@ -61,6 +70,29 @@ h1{
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: right;
+}
+
+/* arrow */
+.arrow-container{
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+}
+.arrow{
+    /* thanks! https://www.geeksforgeeks.org/how-to-create-triangle-in-css/# */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent; 
+    border-top: 30px solid rgb(219, 219, 219); 
+}
+
+.centered-title {
+    text-align: center;
+    font-size:5dvw;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 1%;
 }
 
 
@@ -86,7 +118,7 @@ h1{
 }
 
 .dark_emphasis{
-    color:rgb(74, 74, 180)
+    color:rgb(95, 95, 182)
 }
 
 

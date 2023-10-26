@@ -13,6 +13,20 @@
         <link rel="stylesheet" href="styles/style_dark.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     </head>
+
+    <!-- thanks geeks4geeks -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.querySelector('.arrow-container')
+            const content = document.querySelector('.centered-title')
+
+            container.addEventListener('click', function () {
+                content.scrollIntoView();
+            })
+        })
+    </script>
+
+
     <body>
         <div class="header">
             <div class="menu">
@@ -26,7 +40,21 @@
 
         <div>
             <h1>dark mode<br>enabled</h1>
-        </div>  
+        </div> 
+        
+        <div class="arrow-container">
+            <div class="arrow"></div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <div class="centered-title">why dark mode?</div>
+        </div>
 
         <div class="card" style="margin-left: 100px;">
             <img src="assets/dark1.PNG" alt="github">
@@ -34,7 +62,10 @@
                 no more <span class="dark_emphasis">eye strain</span>
             </h2>
             <div class="card-content">
-                Dark themes are often preferred in low-light environments, such as during <span style="color:rgb(74, 74, 180)">nighttime</span> or in dimly lit rooms. The reduced brightness can contribute to less eye strain and fatigue, promoting a more comfortable reading experience.
+                Dark themes are often preferred in low-light environments, such as during <span style="color:rgb(95, 95, 182)">nighttime</span> or in dimly lit rooms. 
+                <br>
+                <br>
+                "I find myself using dark modes more at night when I need to get work done in darker rooms. The glare from light mode is simply too much."
             </div>
         </div>
 
@@ -44,7 +75,10 @@
                 improved <span style="color:rgb(139, 196, 139)">visability</span>
             </h2>
             <div class="card-content">
-                Dark backgrounds can make certain types of content, such as images, videos, and graphics, stand out more prominently. This can enhance the visibility of visual elements and draw attention to important content.
+                Dark backgrounds can make certain types of content, such as images, videos, and graphics, stand out more <span style="color:rgb(139, 196, 139)">prominently</span>. 
+                <br>
+                <br>
+                "Contrast plays a big role in creating readability for users. It allows me to more easily distinguish colors against the consistently dark background."
             </div>
         </div>
 
@@ -55,6 +89,9 @@
             </h2>
             <div class="card-content">
                 Dark themes have become a popular design choice in many applications and platforms. Providing a dark theme option can create a consistent experience for users who prefer this style, aligning with their expectations.
+                <br>
+                <br>
+                "Most user centered technologies are almost expected to use a sort of light/dark mode as their design base because <span style="color:chocolate">simplicity</span> is a big marketing point for these technologies."
             </div>
         </div>
 
