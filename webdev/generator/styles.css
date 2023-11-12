@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-Regular.woff");
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-Bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-RegularItalic.woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-BoldItalic.woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+    font-family: roobert;
+}
+
+h1 {
+    font-size: 100;
+}
+
+button {
+    text-decoration: none;
+}
