@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-Regular.woff");
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-Bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-RegularItalic.woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "roobert";
+  src: url("fonts/RoobertPROTRIAL-BoldItalic.woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family:'roobert';
+  background-color: rgb(255, 250, 243);
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-color: rgb(24, 24, 24);
+  padding: 100px 0;
+}
+
+.hero-content {
+  color:beige;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 2%;
+  margin-top: 7%;
+}
+
+.hero-content p {
+  font-size:medium;
+}
+
+/* arrow */
+.arrow-container {
+  left: 50%;
+  cursor: pointer;
+  background-color: rgb(21, 21, 21);
+}
+
+.arrow {
+  /* thanks! https://www.geeksforgeeks.org/how-to-create-triangle-in-css/# */
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid rgb(83, 83, 83);
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.card {
+  background-color: rgb(255, 246, 235);
+  margin: 15px;
+  box-shadow: 0 4px 8px rgb(245, 236, 236);
+  width: 20%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card img {
+  padding: 2px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card p {
+  margin-top: 5px;
+  color: rgb(45, 45, 45);
+}
