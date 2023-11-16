@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+
+    <div class="slider demo">
+        <div> Slide 1 </div>
+        <div> Slide 2 </div>
+        <div> Slide 3 </div>
+    </div>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            jQuery('.demo').slick({
+                arrows: 1,
+                dots: 1,
+                cssEase: "ease-out",
+                autoplay: true
+            });
+        });
+    </script>
+</body>
