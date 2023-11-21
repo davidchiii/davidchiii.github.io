@@ -1,3 +1,5 @@
+//not used :/
+
 const data = require('./data.json')
 console.log(data)
 console.log(data[0]["image"])

@@ -17,56 +17,64 @@
     <div class="arrow-container">
         <div class="arrow"></div>
     </div>
-    <div class="card-container">
+
+    <!-- <div class="card-container">
         <h1>alt-rock</h1>
-    </div>
+        <div class="card">
+            <img src="static/img/bilmuri.jpg">
+            <p>descreiptiosn</p>
+        </div>
+    </div> -->
+    <script type="text/javascript">        
+        function generateCards(data) {
+            var cardContainer = document.createElement("div")
+            cardContainer.classList.add("card-container")
+            // alert(data.length)
+            const len = data.length
+
+            for (let i = 0; i < len; i++) {
+                var card = document.createElement('div')
+                card.classList.add("card")
+                var image = document.createElement('img')
+                image.src = data[i]["image"]
+                var description = document.createElement('p')
+                description.textContent = data[i]["description"]
+                card.appendChild(image)
+                card.appendChild(description)
+                cardContainer.appendChild(card)
+            }
+            document.body.appendChild(cardContainer)
+        }
+
+        function main(){
+            // const data = require('./data.json') doesnt work lol
+            const data = [
+                {
+                    "image": "static/img/bilmuri.jpg",
+                    "description": "What sets Bilmuri apart is the seamless blend of aggressive guitar riffs, melodic hooks, and unconventional song structures. Known for his eclectic and genre-defying approach to music, Bilmuri's sound weaves through various styles, incorporating elements of post-hardcore, alternative rock, and experimental genres"
+                },
+                {
+                    "image": "static/img/one.jpg",
+                    "description": "Formed in Tokyo in 2005, the band consists of members Taka (vocals), Toru (guitar), Ryota (bass), and Tomoya (drums). Renowned for their energetic live shows and genre-spanning approach, One Ok Rock has become a significant force in the global rock scene."
+                },
+                {
+                    "image": "static/img/Flumpool-Fantasia_of_Life_Stripe.png",
+                    "description": "Formed in 2007 in Osaka, the band consists of members Ryuta Yamamura (vocals), Kazuki Sakai (guitar), Genki Amakawa (bass), and Seiji Ogura (drums). They wrote covers for many early 2010s animation pieces like Chiisanahibi."
+                },
+                {
+                    "image": "static/img/the_balance.gif",
+                    "description": "Catfish and the Bottlemen is a British rock band. Catfish and the Bottlemen gained widespread attention with their debut album, 'The Balcony, ' released in 2014. The album featured hit singles like 'Kathleen' and 'Cocoon' and showcased the band's talent for crafting catchy, guitar-driven rock tunes."
+                }
+            ]
+            // alert(data)
+            // alert(data[0]["image"])
+            // alert(data.length)
+            generateCards(data)
+        }
+        main()
+    </script>
 
 </body>
-<script type="text/javascript">
-    // const data = require('./data.json') doesnt work lol
-    const data = [
-            {
-                "image": "static/img/bilmuri.jpg",
-                "description": "Description"
-            },
-            {
-                "image": "static/img/one.jpg",
-                "description": "Description"
-            },
-            {
-                "image": "static/img",
-                "description": "Description"
-            },
-            {
-                "image": "static/img",
-                "description": "Description"
-            }
-        ]
-    // alert(data)
-    // alert(data[0]["image"])
-    // alert(data.length)
-    function generateCards() {
-        const cardContainer = document.getElementById("card-container")
-        alert(data.length)
-        const len = data.length
-
-        for (let i = 0; i < len; i++) {
-            const card = document.createElement('div')
-            card.classList.add("card")
-
-            const image = document.createElement('img')
-            image.src = data[i]["image"]
-
-            const description = document.createElement('p')
-            description.textContent = data[i]["description"]
-
-            card.appendChild(image)
-            card.appendChild(description)
-            cardContainer.appendChild(card)
-        }
-    }
-    generateCards()
-</script>
 <!-- <script src="script.js">
     window.onload = generateCards;
 </script> -->
