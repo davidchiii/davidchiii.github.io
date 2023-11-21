@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>json</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
+
 <body>
     <div class="hero">
         <div class="hero-content">
@@ -18,6 +27,10 @@
         <div class="arrow"></div>
     </div>
 
+    <h1>
+        favorite artists
+    </h1>
+
     <!-- <div class="card-container">
         <h1>alt-rock</h1>
         <div class="card">
@@ -25,7 +38,8 @@
             <p>descreiptiosn</p>
         </div>
     </div> -->
-    <script type="text/javascript">        
+
+    <script type="text/javascript">
         function generateCards(data) {
             var cardContainer = document.createElement("div")
             cardContainer.classList.add("card-container")
@@ -46,7 +60,7 @@
             document.body.appendChild(cardContainer)
         }
 
-        function main(){
+        function dothis() {
             // const data = require('./data.json') doesnt work lol
             const data = [
                 {
@@ -71,11 +85,61 @@
             // alert(data.length)
             generateCards(data)
         }
-        main()
+        dothis()
     </script>
 
+    <h1>
+        other interesting artists
+    </h1>
+
+    <div class="rotator">
+        <div class="card2">
+            <img src="static/img/radwimps.jpg">
+            <p>RADWIMPS</p>
+        </div>
+        <div class="card2">
+            <img src="static/img/yorushika.jpg">
+            <p>yorushika</p>
+        </div>
+        <div class="card2">
+            <img src="static/img/polyphia.jpg">
+            <p>Polyphia</p>
+        </div>
+        <div class="card2">
+            <img src="static/img/Porter_Robinson_-_Worlds.jpg">
+            <p>Porter Robinson</p>
+        </div>
+        <div class="card2">
+            <img src="static/img/superbeaver.jpg">
+            <p>superbeaver</p>
+        </div>
+        <div class="card2">
+            <img src="static/img/peachpit.jpg">
+            <p>peach pit</p>
+        </div>
+        <div class="card2">
+            <img src="static/img/thepillows.jpg">
+            <p>the pillows</p>
+        </div>
+        <div class="card2">
+            <img src="static/img/aimer.jpg">
+            <p>aimer</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // alert("played")
+            $('.rotator').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
 </body>
 <!-- <script src="script.js">
     window.onload = generateCards;
 </script> -->
+
 </html>

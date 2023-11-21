@@ -88,7 +88,34 @@ body {
   border-radius: 4px;
 }
 
+
 .card p {
   margin-top: 5px;
   color: rgb(45, 45, 45);
+  padding: 2%;
+}
+
+.card2 {
+  background-color: rgb(55, 55, 55);
+  margin: 15px;
+  box-shadow: 0 4px 8px rgb(55, 55, 55);
+  width: 20%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card2 p {
+  margin-top: 5px;
+  padding: 2%;
+  color: rgb(201, 201, 201);
+}
+
+h1 {
+  padding-left: 2%;
 }
