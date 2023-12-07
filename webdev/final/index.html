@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le'Metaverse</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="more.html" style="color: rgb(183, 183, 183);">+more</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+    <div class="jumbotron">
+        <h1>the <span class="gradient">metaverse</span>🕹️</h1>
+        <p>why it died and all the lessons learned along the way</p>
+    </div>
+
+    <div class="content-break-line"> </div>
+
+    <div class="intro-container">
+        <div class="intro">
+            <h1>
+                Transition from Web 2 to Web 3. 🔁
+            </h1>
+            <p>
+                As the internet transitions from Web 2.0 to Web 3.0, new content will take the form of immersive
+                experiences that link the digital environment with physical sensations. Web 3.0, which many experts use
+                synonymously with the metaverse, promises to introduce novel types of content alongside a decentralized
+                content culture.
+            </p>
+            <h1 style="text-align: right;">
+                The metaverse didn't die. It never took off. 🛬
+            </h1>
+            <p>
+                An immersive, seamless metaverse requires robust virtual reality and augmented reality systems. This
+                hardware is neither accessible nor affordable. Because of the inability to address all these issues, a
+                huge amount of content likely isn't being used.
+            </p>
+            <h1>
+                Why does it feel so ... lazy? 💤
+            </h1>
+            <p>
+                While technological limiations might be one of the reasons why digital art feels so artifical on the
+                metaverse, it's not entirely the case. Another significant factor is the normalization of the tech
+                industry and die-hard focus on cleanliness and simplicity.
+            </p>
+            <h1 style="text-align: right;">
+                Why does it matter now? ‼️
+            </h1>
+            <p>
+                A design vaccuum will appear when the technology does catch up. Analogous to attempts at Language Models
+                in the 2000s, technology will reach a point where the first point, seamless virtual reality is possible.
+                Rendering Web 3 content could become a new advertising venture.
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="content-break-line"> </div>
+
+    <div class="header">
+        <h1 class="gradient2">Explore</h1>
+    </div>
+
+    <div class="content-container">
+        <a href="more.html" class="fill-div">
+            <div class="content">
+                <div class="content-right-container">
+                    <h1>I'm happy Facebook's Metaverse failed....</h1>
+                    <p>4 min read.</p>
+                </div>
+                <div class="content-left-container">
+                    <img src="assets/meta3.jpg">
+                </div>
+            </div>
+        </a>
+    </div>
+    <br>
+
+    <div class="content-container" style="margin-right:40px">
+        <a href="history.html" class="fill-div">
+            <div class="content">
+                <div class="content-right-container">
+                    <h1>History of Virtual Worlds</h1>
+                    <p>6 min read.</p>
+                </div>
+                <div class="content-left-container">
+                    <img src="assets/vrchat2.png">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="header">
+        <h1 class="gradient2">Gallery</h1>
+    </div>
+
+    <div class="wrapperForDemo">
+        <div class="glider-contain">
+            <div class="glider">
+                <div class="card"><img src="assets/2.jpg"></div>
+                <div class="card"><img src="assets/3.png"></div>
+                <div class="cardsp"><img src="assets/7.jpg"></div>
+                <div class="card"><img src="assets/8.jpg"></div>
+                <div class="card"><img src="assets/casino.jpg"></div>
+                <div class="card"><img src="assets/money.png"></div>
+            </div>
+
+            <button role="button" aria-label="Previous" class="glider-prev">«</button>
+            <button role="button" aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+        </div>
+    </div>
+
+    <script>
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 2,
+            draggable: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            dots: '.dots'
+        })
+
+        slideAutoPlay(slider, '.glider');
+
+        function slideAutoPlay(glider, selector, delay = 2000, repeat = true) {
+            let autoplay = null;
+            const slidesCount = glider.track.childElementCount;
+            let nextIndex = 1;
+            let pause = true;
+
+            function slide() {
+                autoplay = setInterval(() => {
+                    if (nextIndex >= slidesCount) {
+                        if (!repeat) {
+                            clearInterval(autoplay);
+                        } else {
+                            nextIndex = 0;
+                        }
+                    }
+                    glider.scrollItem(nextIndex++);
+                }, delay);
+            }
+
+            slide();
+
+            var element = document.querySelector(selector);
+            element.addEventListener('mouseover', (event) => {
+                if (pause) {
+                    clearInterval(autoplay);
+                    pause = false;
+                }
+            }, 300);
+
+            element.addEventListener('mouseout', (event) => {
+                if (!pause) {
+                    slide();
+                    pause = true;
+                }
+            }, 300);
+        }
+    </script>
+    <br>
+    <br>
+</body>
+
+<footer class="site-footer">
+    <p>hosted with ❤️ on github pages.</p>
+</footer>
+
+</html>
