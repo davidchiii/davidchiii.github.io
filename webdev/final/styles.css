@@ -37,7 +37,6 @@
     border-top: 2px solid #f8f8f8;
     margin: 20px auto;
     width: 20%;
-
 }
 
 body {
@@ -46,7 +45,7 @@ body {
     height: 100%;
     background: linear-gradient(to bottom, #ffd6a4, #5f6cff);
     color: #fff;
-
+    font-size: 100%;
     font-family: roobert;
     /* font-weight: lighter; */
 }
@@ -96,19 +95,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: right;
-    padding: 20px;
+    padding-right: 4em;
 }
 
 .jumbotron h1 {
     width: 100%;
     margin-bottom: auto;
     font-family: saneyi;
-    font-size: 80px;
+    font-size: 5.5em;
 }
 
 .jumbotron p {
     width: 100%;
-    padding-right: 20px;
+    padding-right: 1.5em;
 }
 
 .navbar {
@@ -206,4 +205,14 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+a {
+    /* font-size:2.4em; */
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color:rgb(149, 65, 182);
 }
