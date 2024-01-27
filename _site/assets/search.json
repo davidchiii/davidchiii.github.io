@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "CTF101: Opensourcing Google&#39;s Top Search for CTF Content",
+      "description" : "Find a CTF. Find a Job.",
+      "tags"     : "infrastructure, OSIRIS, open-source",
+      "url"      : "/opensourcingctf101/",
+      "date"     : "2024-01-27 03:38:00 -0500"
+    } ,
+  
+    {
       "title"    : "Fixing 7 year old Infrastructure (and breaking everything along the way)",
       "description" : "Guide to configuring OSIRIS&#39;s lab&#39;s infrastructure.",
       "tags"     : "infrastructure, OSIRIS",

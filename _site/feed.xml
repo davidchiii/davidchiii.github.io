@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-01-27T15:37:19-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">David Chang</title><subtitle>Blog of David Chang.</subtitle><author><name>David Chang</name><email>changdavid52@gmail.com</email></author><entry><title type="html">Fixing 7 year old Infrastructure (and breaking everything along the way)</title><link href="http://localhost:4000/infra/" rel="alternate" type="text/html" title="Fixing 7 year old Infrastructure (and breaking everything along the way)" /><published>2023-10-14T23:02:00-04:00</published><updated>2023-10-14T23:02:00-04:00</updated><id>http://localhost:4000/infra</id><content type="html" xml:base="http://localhost:4000/infra/">&lt;p&gt;This will serve as an impromptu post for a writeup on OSIRIS infrastructure. I need a place to write this stuff down before problems start occurring again.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-01-27T16:50:24-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">davidchiii.github.io</title><subtitle>Blog of David Chang.</subtitle><author><name>David Chang</name><email>changdavid52@gmail.com</email></author><entry><title type="html">CTF101: Opensourcing Google’s Top Search for CTF Content</title><link href="http://localhost:4000/opensourcingctf101/" rel="alternate" type="text/html" title="CTF101: Opensourcing Google’s Top Search for CTF Content" /><published>2024-01-27T03:38:00-05:00</published><updated>2024-01-27T03:38:00-05:00</updated><id>http://localhost:4000/opensourcingctf101</id><content type="html" xml:base="http://localhost:4000/opensourcingctf101/">&lt;h3 id=&quot;humble-beginnings&quot;&gt;Humble Beginnings&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;I found the site back in high school actually. Back then, we just started our first CTF team and were looking for any resource we could to improve. I got my shit rocked in CSAW’18 and picoCTF. Obviously, the stuff they had in Cyberpatriot isn’t comparable at all to what ctfs were.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“you’re telling me we’re actually USING John the Ripper instead of just deleting it? Wild.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;CTF101.org was just a passing stop on the way to look for resources. I think it was pretty useful for me back then since I wasn’t fully exposed to all the categories yet. I didn’t know shit about C, let alone reversing it. Nevertheless, it was a part of my high school life, and it (kinda) influenced me to take a closer look at how CTFs were like.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Is there a checklist for this?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;problems&quot;&gt;Problems&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;CTF101 was the brain child of OSIRIS and its members back in 2015-2016 (approx.) It was probably the first attempt at “wiki-fying” the competition. Obviously, as the authors of CSAW, one of the oldest security competitions in the world, it only made sense for OSIRIS to have materials for it.&lt;/p&gt;
+
+&lt;p&gt;Back then, it was actually planned to integrate all the CSAW challenges since 2012 as sort of “practice material” to supplement the meat and bones of the documents.&lt;/p&gt;
+
+&lt;p&gt;Well, problem was: no one cared enough to maintain it.&lt;/p&gt;
+
+&lt;p&gt;The last commit for the page was 6 years before I took a crack at it!&lt;/p&gt;
+
+&lt;h3 id=&quot;open-for-business&quot;&gt;Open for business.&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;I’ve never open sourced a project, let alone someone else’s project. However, there were lot of resources available for me. Following through these steps @ &lt;a href=&quot;https://opensource.guide/starting-a-project/&quot;&gt;opensource.guide&lt;/a&gt;, I got a good idea what I needed to do.&lt;/p&gt;
+
+&lt;p&gt;After half a day of&lt;/p&gt;
+
+&lt;h3 id=&quot;closing-thoughts&quot;&gt;Closing thoughts&lt;/h3&gt;
+
+&lt;p&gt;It was fulfilling going back in time to work on a project that I used years ago. Not gonna lie, I have no idea whether or not newbies would look at this ever again. But at least, it’ll hopefully get Trail of Bits to update their shit too.&lt;/p&gt;</content><author><name>David Chang</name><email>changdavid52@gmail.com</email></author><category term="infrastructure" /><category term="OSIRIS" /><category term="open-source" /><summary type="html">Humble Beginnings</summary></entry><entry><title type="html">Fixing 7 year old Infrastructure (and breaking everything along the way)</title><link href="http://localhost:4000/infra/" rel="alternate" type="text/html" title="Fixing 7 year old Infrastructure (and breaking everything along the way)" /><published>2023-10-14T23:02:00-04:00</published><updated>2023-10-14T23:02:00-04:00</updated><id>http://localhost:4000/infra</id><content type="html" xml:base="http://localhost:4000/infra/">&lt;p&gt;This will serve as an impromptu post for a writeup on OSIRIS infrastructure. I need a place to write this stuff down before problems start occurring again.&lt;/p&gt;
 
 &lt;h2 id=&quot;gateway&quot;&gt;Gateway&lt;/h2&gt;
 
