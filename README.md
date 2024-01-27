@@ -1,13 +1,25 @@
-##README.md
+### davidchiii.github.io
 ---
-Welcome to the source of my website.
 
-I'm trying to create a portfolio/business card style page that I can use to host other projects.
+Jekyll website + [**klise**](https://github.com/piharpi/jekyll-klise) theme.
 
-Elements and styling from Bootstrap v.7.0.5.
-Still working on javascript elements that change 
-the site around
+Deployed to gh-pages with [**Jekyll**](https://jekyllrb.com/). Built using Ruby on Rails.
 
+Compiled with Markdown.
 
-Made on a weekend with nothing to do.
+### Build
+---
 
+1. Clone repository.
+    ```bash
+    $ git clone git@github.com:davidchiii/davidchiii.github.io.git
+    ```
+2. Install Ruby Gemfile.
+    ```bash
+    $ cd davidchiii.github.io
+    $ bundle install
+    ```
+3. Run the local development server.
+    ```bash
+    $ bundle exec jekyll serve
+    ```

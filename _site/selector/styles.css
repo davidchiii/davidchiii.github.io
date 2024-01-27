@@ -1,0 +1,55 @@
+div {
+    /* background-color:coral; */
+    font-size: larger;
+
+}
+
+body{
+    background-color: coral;
+}
+
+div > p{
+    background-color: antiquewhite;
+}
+
+div > div {
+    padding:0%;
+}
+
+.container{
+    background-color: coral;
+    display: flexbox;
+    justify-content:flex-start;
+    max-width: 50%;
+}
+
+.container .div_container .overlay{
+    filter: drop-shadow(0px 0px);
+}
+
+.original {
+    display: flex;
+    filter: drop-shadow(16px 16px);
+    width: 50%;
+    size: 50%;
+}
+
+.original:hover + .overlay{
+    display: flex;
+    order: 1;
+}
+
+.overlay {
+    display:none;
+    width: 50%;
+}
+
+.text{
+    max-width: 50%;
+}
+
+.text > h1{
+    font-family: Verdana;
+    font-style: oblique;
+    padding-left: 10%;
+}
