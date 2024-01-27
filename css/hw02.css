@@ -1,0 +1,57 @@
+body {
+    background-color: crimson;
+    color: antiquewhite;
+}
+
+@font-face {
+    font-family: cocacola;
+    src: url('cocacola.ttf');
+    font-size: 0%;
+}
+
+@font-face {
+    font-family: curs;
+    src: url('CedarvilleCursive-Regular.ttf');
+}
+
+h1 {
+    font-family: cocacola;
+    text-align: center;
+}
+
+h2 {
+    font-family: curs;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.border {
+    border-style: solid;
+}
+
+.button {
+    background-color: white;
+    border:none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    float: left;
+}

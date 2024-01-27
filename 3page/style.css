@@ -1,0 +1,149 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(190, 204, 235);
+}
+
+/* navbar styling */
+.navbar{
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline;
+}
+
+.navbar a{
+    color:blue;
+    /* text-align: center; */
+    padding: 22px 24px;
+    text-decoration: none;
+    font-size: 100%;
+    padding: 30px;
+}
+
+.navbar a:hover{
+    background-color: rgb(232, 251, 185);
+}
+
+/* banner element */
+
+.banner {
+    background-color: #3498db; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.banner h1 {
+    font-size: 36px; 
+    margin-bottom: 10px; 
+    background-color: inherit;
+}
+
+.banner p {
+    font-size: 18px; 
+    background-color: inherit;
+}
+
+/* flex elements */
+
+.row_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 100%;
+    flex:1;
+    /* row-gap: 10px; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.column_flex img{
+    border: #3498db;
+    border-radius: 25px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.column_flex p {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    padding: 5%;
+}
+
+
+/* gallery */
+
+.gallery_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 2vmin;
+}
+
+.gallery_flex img {
+    box-sizing: border-box;
+    padding: 2vmin;
+    max-width: 100%;
+    border-radius: 2vmin;
+}
+
+
+
+
+
+/* unused grid layout */
+/* .row {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row2 {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column {
+    padding:1rem;
+}
+
+.column_img {
+    max-width:100%;
+    height: auto;
+}
+
+
+.container {
+    display: flex;
+}
+
+.column_1 {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.column_2 {
+    flex: 2;
+    background-color: #e0e0e0;
+    padding: 20px;
+
+} */
+
+h1 {
+    text-align: center;
+    color:rgb(93, 196, 163);
+}
+
