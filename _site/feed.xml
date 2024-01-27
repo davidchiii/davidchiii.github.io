@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2023-10-19T15:44:02-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">David Chang</title><subtitle>Blog of David Chang.</subtitle><author><name>David Chang</name><email>changdavid52@gmail.com</email></author><entry><title type="html">Fixing 7 year old Infrastructure (and breaking everything along the way)</title><link href="http://localhost:4000/infra/" rel="alternate" type="text/html" title="Fixing 7 year old Infrastructure (and breaking everything along the way)" /><published>2023-10-14T23:02:00-04:00</published><updated>2023-10-14T23:02:00-04:00</updated><id>http://localhost:4000/infra</id><content type="html" xml:base="http://localhost:4000/infra/">&lt;p&gt;This will serve as an impromptu post for a writeup on OSIRIS infrastructure. I need a place to write this stuff down before problems start occurring again.&lt;/p&gt;
+
+&lt;h2 id=&quot;gateway&quot;&gt;Gateway&lt;/h2&gt;
+
+&lt;p&gt;OSIRIS uses this an ancient Debian 8 host called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pakhet&lt;/code&gt;. Specs of this machine are below:&lt;/p&gt;
+&lt;div class=&quot;overflow-table&quot;&gt;
+
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th style=&quot;text-align: left&quot;&gt;Component&lt;/th&gt;
+        &lt;th style=&quot;text-align: left&quot;&gt;Hardware&lt;/th&gt;
+        &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;text-align: left&quot;&gt;CPU&lt;/td&gt;
+        &lt;td style=&quot;text-align: left&quot;&gt;AMD Opteron(tm) Processor 275&lt;/td&gt;
+        &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Duo-Core 4 CPU @ 2.20GHz&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;text-align: left&quot;&gt;Memory&lt;/td&gt;
+        &lt;td style=&quot;text-align: left&quot;&gt;DIMM DDR memory&lt;/td&gt;
+        &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;12gb DDR1 @ 400Mhz&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;text-align: left&quot;&gt;Storage&lt;/td&gt;
+        &lt;td style=&quot;text-align: left&quot;&gt;disk drive&lt;/td&gt;
+        &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;64gb 50mbps I/O Speed&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;There’s nothing much to look at. It’s an old, degraded Dell Proliant server from 2009 that somehow manages all the inbound connections to the inside clusters. When the infrastructure was handed to me, accessing the internal hosts meant port-forwarding the hypervisor web interface through SSH! This needs to be more secure. Perhaps a VPN service that goes to a firewall first.&lt;/p&gt;
+
+&lt;h2 id=&quot;internal&quot;&gt;Internal&lt;/h2&gt;
+
+&lt;p&gt;Internally, there are 4 online hosts in the RG227 server room running the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Proxmox&lt;/code&gt; hypervisor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v6.14&lt;/code&gt;, several versions out of date. For the hypervisor upgrade, I recommend migrating over to the more reliable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vmWare ESXI&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;services&quot;&gt;Services&lt;/h2&gt;
+
+&lt;p&gt;There were few services left up when I was handed the infrastructure: a recruitment web page, a buggy, no-certificate security class materials page, and a few VPN endpoints. The existing NAS was offline. LDAP hasn’t worked for several years, and a few of the hosts haven’t been powered down for over a year.&lt;/p&gt;
+
+&lt;h2 id=&quot;hosts&quot;&gt;Hosts&lt;/h2&gt;
+
+&lt;p&gt;The newest host machine available is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dell Poweredge R710&lt;/code&gt; server from 2009. It’s configured with a PERC 6/i RAID controller and used for data redundancy.&lt;/p&gt;</content><author><name>David Chang</name><email>changdavid52@gmail.com</email></author><category term="infrastructure" /><category term="OSIRIS" /><summary type="html">This will serve as an impromptu post for a writeup on OSIRIS infrastructure. I need a place to write this stuff down before problems start occurring again. Gateway OSIRIS uses this an ancient Debian 8 host called pakhet. Specs of this machine are below: Component Hardware   CPU AMD Opteron(tm) Processor 275 Duo-Core 4 CPU @ 2.20GHz Memory DIMM DDR memory 12gb DDR1 @ 400Mhz Storage disk drive 64gb 50mbps I/O Speed There’s nothing much to look at. It’s an old, degraded Dell Proliant server from 2009 that somehow manages all the inbound connections to the inside clusters. When the infrastructure was handed to me, accessing the internal hosts meant port-forwarding the hypervisor web interface through SSH! This needs to be more secure. Perhaps a VPN service that goes to a firewall first. Internal Internally, there are 4 online hosts in the RG227 server room running the Proxmox hypervisor v6.14, several versions out of date. For the hypervisor upgrade, I recommend migrating over to the more reliable vmWare ESXI. Services There were few services left up when I was handed the infrastructure: a recruitment web page, a buggy, no-certificate security class materials page, and a few VPN endpoints. The existing NAS was offline. LDAP hasn’t worked for several years, and a few of the hosts haven’t been powered down for over a year. Hosts The newest host machine available is a Dell Poweredge R710 server from 2009. It’s configured with a PERC 6/i RAID controller and used for data redundancy.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/%5Cconfiguring-cisco-layer-3-switches%5Clab.png" /><media:content medium="image" url="http://localhost:4000/%5Cconfiguring-cisco-layer-3-switches%5Clab.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">New Beginnings</title><link href="http://localhost:4000/firstpost/" rel="alternate" type="text/html" title="New Beginnings" /><published>2023-10-14T18:38:00-04:00</published><updated>2023-10-14T18:38:00-04:00</updated><id>http://localhost:4000/firstpost</id><content type="html" xml:base="http://localhost:4000/firstpost/">&lt;p&gt;This is my first post!&lt;/p&gt;
+
+&lt;p&gt;It doesn’t have much in it at the moment, but I’d like to thank the creator of this theme for allowing everyone to build on top of it. Since this is the first of its kind, I’d thought to leave some documentation on writing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt; posts for future reference.&lt;/p&gt;
+
+&lt;p&gt;The code can be found at &lt;a href=&quot;https://github.com/davidchiii/davidchiii.github.io&quot;&gt;this&lt;/a&gt; repository. It is running on Github-Pages and built using Jekyll and Ruby-on-Rails. Jekyll works as a renderer for markdown files where they are parsed and turned into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html&lt;/code&gt; file where github pages knows how to serve them.&lt;/p&gt;
+
+&lt;p&gt;To install and make a copy of this site, clone the website and use&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;to install the packages and run with&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve &lt;span class=&quot;nt&quot;&gt;--livereload&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;to start the development server.
+By default, it is configured for github-pages. If you’d like to switch it back to locally hosted &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt;, comment out the line in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The default header for each post is&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
+&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;YYYY-MM-DD 00:00 +0000&lt;/span&gt; 
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
+&lt;span class=&quot;na&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;tag here&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll update&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;usemathjax&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;comments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>David Chang</name><email>changdavid52@gmail.com</email></author><category term="meta" /><summary type="html">This is my first post! It doesn’t have much in it at the moment, but I’d like to thank the creator of this theme for allowing everyone to build on top of it. Since this is the first of its kind, I’d thought to leave some documentation on writing Jekyll posts for future reference. The code can be found at this repository. It is running on Github-Pages and built using Jekyll and Ruby-on-Rails. Jekyll works as a renderer for markdown files where they are parsed and turned into a html file where github pages knows how to serve them. To install and make a copy of this site, clone the website and use bundle install to install the packages and run with bundle exec jekyll serve --livereload to start the development server. By default, it is configured for github-pages. If you’d like to switch it back to locally hosted Jekyll, comment out the line in Gemfile. The default header for each post is --- layout: post title: date: YYYY-MM-DD 00:00 +0000 description: tag: - tag here image: categories: jekyll update usemathjax: true comments: true ---</summary></entry></feed>

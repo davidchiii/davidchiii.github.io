@@ -9,5 +9,5 @@ Still working on javascript elements that change
 the site around
 
 
-Made on a few weekends with nothing to do.
+Made on a weekend with nothing to do.
 

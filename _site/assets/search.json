@@ -1,0 +1,19 @@
+[
+  
+    {
+      "title"    : "Fixing 7 year old Infrastructure (and breaking everything along the way)",
+      "description" : "Guide to configuring OSIRIS&#39;s lab&#39;s infrastructure.",
+      "tags"     : "infrastructure, OSIRIS",
+      "url"      : "/infra/",
+      "date"     : "2023-10-14 23:02:00 -0400"
+    } ,
+  
+    {
+      "title"    : "New Beginnings",
+      "description" : "first blog post!",
+      "tags"     : "meta",
+      "url"      : "/firstpost/",
+      "date"     : "2023-10-14 18:38:00 -0400"
+    } 
+  
+]

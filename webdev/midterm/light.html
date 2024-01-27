@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style_light.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    </head>
+
+    <!-- thanks geeks4geeks -->
+    <script> 
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.querySelector('.arrow-container');
+            const contentSection = document.querySelector('.centered-title');
+
+            container.addEventListener('click', function () {
+                contentSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+    <body>
+        <div class="header">
+            <div class="menu">
+                <div class="link">
+                    <div href="dark.html" class="title">
+                        <a href="dark.html"><b>dark mode </b><i class="fa fa-moon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>radiant <br>light mode</h1>
+        </div>
+        <div class="arrow-container">
+            <div class="arrow"></div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <div class="centered-title">why light mode?</div>
+        </div>
+        <!-- card 1 -->
+        <div class="card" style="margin-left: 100px;">
+            <img src="assets/light1.PNG" alt="gitlab_content">
+            <h2>
+                control over <span class="light_emphasis">color</span>
+            </h2>
+            <div class="card-content">
+                On average, black text against white backgrounds enables users to comprehend information more swiftly, with up to a <span class="light_emphasis">9% increase</span> in
+                speed when using sans-serif fonts.
+                <br>
+                <br>
+                "Not only are they easy to read, the contrast makes it easy to decorate with color. Splashes of color introduce an air
+                of playfulness and simple, effective design."
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card" style="margin-left: 200px;">
+            <img src="assets/light2.PNG" alt="tailwindcss">
+            <h2>
+                focuses <br>
+                <span style="color: coral;">attention</span>
+            </h2>
+            <div class="card-content">
+                Light themes are often associated with <span style="color: coral;">clean</span> and minimalistic design principles.
+                <br>
+                <br>
+                "I find myself incredibly appealed to by light mode themes because of their simplicity. To most developers, they only
+                care about the usage of the tool they're looking at and clear, simple light-theme marketing is enough."
+            </div>
+        </div>
+
+        <div class="card" style="margin-left: 150px;">
+            <img src="assets/light3.PNG" alt="googleui">
+            <h2>
+                <span style="color:yellowgreen">positive</span> <br>mood
+            </h2>
+            <div class="card-content">
+                Light themes create a positive user experience and influences the user's mood positively, making them more likely to engage with the content. Afterall, light themes are likened to <span style="color:yellowgreen">daylight</span>.
+            </div>
+        </div>
+
+        <div class="footer">
+            hosted with 💖 on Github pages
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>
