@@ -40,10 +40,15 @@ The last commit for the page was 6 years before I took a crack at it!
 ---
 I've never open sourced a project, let alone someone else's project. However, there were lot of resources available for me. Following through these steps @ [opensource.guide](https://opensource.guide/starting-a-project/), I got a good idea what I needed to do. 
 
-After half a day of 
+After half a day of going through LICENSEs and CONTRIBUTING.md, the site was pretty much ready, and by the end of the day, it was released.
 
 
 ### Closing thoughts
 
-It was fulfilling going back in time to work on a project that I used years ago. Not gonna lie, I have no idea whether or not newbies would look at this ever again. But at least, it'll hopefully get Trail of Bits to update their shit too.
+It was fulfilling going back in time to work on a project that I used years ago. Not gonna lie, I have no idea whether or not newbies would look at this ever again. But at least, it'll hopefully get Trail of Bits to update their stuff too.
+
+<figure>
+<img src="tob.png" alt="Trail of Bits Good Info">
+<figcaption>This is mostly true.</figcaption>
+</figure>
 
