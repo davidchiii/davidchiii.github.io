@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "async API polling with Javascript"
-date: 2024-03-07 10:07 +0700
+date: 2024-03-07 2:07 +0700
 description: Find a CTF. Find a Job.
 tag:
   - javascript
@@ -42,3 +42,5 @@ The approach I went with was `sleep()` for a few seconds before requesting the e
     ...
   }
 ```
+
+I think it's time for me to go to bed.
