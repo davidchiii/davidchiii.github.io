@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Node.js and it&#39;s main function",
+      "description" : "Somethings I learned along the way",
+      "tags"     : "javascript",
+      "url"      : "/nodejs-main/",
+      "date"     : "2024-04-02 03:36:00 -0400"
+    } ,
+  
+    {
       "title"    : "async API polling with Javascript",
       "description" : "Find a CTF. Find a Job.",
       "tags"     : "javascript, API",
