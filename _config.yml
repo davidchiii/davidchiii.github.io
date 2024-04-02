@@ -12,7 +12,7 @@ mode: dark # default theme "dark" | "light"
 author:
   name: David Chang # author name
   bio: >- # tell to the world
-    Computer Science student @ New York University. Full stack development intern. Interested in machine learning, computer infrastructure, and web development.
+    Computer science @ New York University <br> Full Stack + Machine Learning
   username: davidchiii # general username
   github: davidchiii # github username
   twitter: twitter_username # twitter username
