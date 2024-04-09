@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "On Leadership and the Drive",
+      "description" : "Humility goes a long way",
+      "tags"     : "meta, leadership, osiris",
+      "url"      : "/on-leadership/",
+      "date"     : "2024-04-07 13:30:00 -0400"
+    } ,
+  
+    {
       "title"    : "Node.js and it&#39;s main function",
       "description" : "Somethings I learned along the way",
       "tags"     : "javascript",
