@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "picoCTF21 - Shop Writeup",
+      "description" : "Find a CTF. Find a Job.",
+      "tags"     : "go, reversing",
+      "url"      : "/pico21-shop/",
+      "date"     : "2024-05-24 19:07:00 -0400"
+    } ,
+  
+    {
       "title"    : "On Leadership and the Drive",
       "description" : "Humility goes a long way",
       "tags"     : "meta, leadership, osiris",

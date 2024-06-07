@@ -47,8 +47,6 @@ After half a day of going through LICENSEs and CONTRIBUTING.md, the site was pre
 
 It was fulfilling going back in time to work on a project that I used years ago. Not gonna lie, I have no idea whether or not newbies would look at this ever again. But at least, it'll hopefully get Trail of Bits to update their stuff too.
 
-<figure>
-<img src="tob.png" alt="Trail of Bits Good Info">
-<figcaption>This is mostly true.</figcaption>
-</figure>
+!["mostly true"](/assets/img/posts/tob.png)
 
+^ this is "mostly" true. Thanks trail...
