@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Passing functions by reference is usually the way to go when you have arguments.",
+      "description" : "Analyzing JSX callback functions.",
+      "tags"     : "React, frontend",
+      "url"      : "/callback/",
+      "date"     : "2025-09-21 14:32:00 -0400"
+    } ,
+  
+    {
       "title"    : "picoCTF21 - Shop Writeup",
       "description" : "Find a CTF. Find a Job.",
       "tags"     : "go, reversing",
