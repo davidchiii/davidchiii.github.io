@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "An observation about the databases class at NYU Tandon",
+      "description" : "",
+      "tags"     : "philosophy, databases",
+      "url"      : "/observations/",
+      "date"     : "2026-03-15 05:22:00 -0400"
+    } ,
+  
+    {
       "title"    : "Passing functions by reference is usually the way to go when you have arguments.",
       "description" : "Analyzing JSX callback functions.",
       "tags"     : "React, frontend",
