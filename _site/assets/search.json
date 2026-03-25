@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Complaining",
+      "description" : "",
+      "tags"     : "python",
+      "url"      : "/rookie/",
+      "date"     : "2026-03-24 02:12:00 -0400"
+    } ,
+  
+    {
       "title"    : "An observation about the databases class at NYU Tandon",
       "description" : "",
       "tags"     : "philosophy, databases",
